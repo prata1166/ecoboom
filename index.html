@@ -12,17 +12,20 @@
             background-color: #f5f5f5;
             display: flex;
             justify-content: center;
-            align-items: center;
-            height: 100vh;
+            align-items: flex-start; /* ✅ não centra verticalmente */
+            min-height: 100vh; /* ✅ permite crescer */
             text-align: center;
+            padding: 20px;
         }
 
         .container {
-            max-width: 800px;
+            max-width: 1000px;
+            width: 100%;
         }
 
         .logo img {
             width: 200px;
+            max-width: 100%;
             margin-bottom: 20px;
         }
 
@@ -44,74 +47,3 @@
             overflow: hidden;
             width: 250px;
             text-decoration: none;
-            color: black;
-            transition: transform 0.2s;
-        }
-
-        .card:hover {
-            transform: scale(1.05);
-        }
-
-        .card img {
-            width: 100%;
-            height: 180px;
-            object-fit: cover;
-        }
-
-        .card p {
-            padding: 15px;
-            font-weight: bold;
-        }
-    </style>
-</head>
-
-<body>
-
-<div class="container">
-
-    <!-- Logotipo -->
-    <div class="logo">
-        <!-- Substitui "logo.png" pelo caminho do teu logotipo -->
-        <img src=LogoEcoBoom.jpeg alt="Ecoboom Logo">
-    </div>
-
-    <!-- Contactos -->
-    <div class="contactos">
-        <h2>Ecoboom Portugal</h2>
-        <p>Email: <a href="mailto:ecoboom.portugal@gmail.com">ecoboom.portugal@gmail.com</a></p>
-        <p>Telefone: <a href="tel:932961746">932 961 746</a></p>
-        <p>Chat On-line: <a href="https://1218.3cx.cloud/prata">https://1218.3cx.cloud/prata</a></p>
-
-    </div>
-
-    <!-- Links com imagem -->
-    <div class="links">
-
-        <a class="card" href="https://www.ecoboom.es/pt" target="_blank">
-            <!-- Substitui a imagem abaixo -->
-            <img src=lojaecoboom.jpg alt="eLoja Ecoboom">
-            <p>Visitar eLoja Ecoboom</p>
-        </a>
-
-        <a class="card" href="ecoboom360.html">
-            <!-- Substitui a imagem abaixo -->
-            <img src=ecoboom360.png alt="Ecoboom 360">
-            <p>Descobrir Ecoboom 360</p>
-        </a>
-        
-        <a class="card" href="redeparceiros.html">
-            <!-- Substitui a imagem abaixo -->
-            <img src=RedeParceiros.png alt="Rede de Parceiros">
-            <p>Rede de Parceiros</p>
-        </a>
-        <a class="card" href="crechesparceiras.html">
-            <!-- Substitui a imagem abaixo -->
-            <img src=CrechesParceiras.png alt="Creches Parceiras">
-            <p>Creches Parceiras</p>
-        </a>
-    </div>
-
-</div>
-
-</body>
-</html>
